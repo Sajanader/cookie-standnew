@@ -14,7 +14,7 @@ function Location(
     total,
 
 ) {
-    this.location= location;
+    this.location = location;
     this.max = max;
     this.min = min;
     this.average = average;
@@ -151,20 +151,57 @@ for (var i = 0; i < locations.length; i++) {
     locations[i].getDailyTotal();
     locations[i].render();
 }
-var Total=0;
-for(var i=0; i< locations.length; i++){
-Total+= locations[i].total; }
+var Total = 0;
+for (var i = 0; i < locations.length; i++) {
+    Total += locations[i].total;
+}
+footer();
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log(event.target);
+    var locations = event.target.locations.value;
+    console.log(locations);
+    var max = event.target.max.value;
+    console.log(max);
+    var min = event.target.min.value;
+    console.log(min);
+    var average = event.target.average.value;
+    console.log(average);
+    var customers = event.target.customers.value.split(',');
+    console.log(customers);
+    var cookies = event.target.cookies.value.split(',');
+    console.log(cookies);
+    var total = event.target.total.value;
+    console.log(total);
+    var location = new Location(
+        locations,
+        min,
+        max,
+        average,
+        Customers,
+        cookies,
+        total,
+    );
+    location.getCookies();
+    location.getCustomers();
+    location.getDailyTotal();
+    location.getDailyTotal();
+    location.render();
+    form.reset();
+});
+
 
 // var totalCookiesPerHour =0;
 // for (var i = 0; i< locations.length; i++) {
 //     totalCookiesPerHour+= locations[i].cookies;
-    
+
 // }
 
-      footer();
+
 
 
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-   
+
