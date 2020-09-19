@@ -194,6 +194,7 @@ form.addEventListener('submit', function (event) {
     form.reset();
 });
 
+
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
