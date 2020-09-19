@@ -1,6 +1,5 @@
 'use strict'
 var hour = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm",];
-<<<<<<< HEAD
 var container = document.getElementById('container');
 var locations = [];
 function Location(
@@ -194,9 +193,6 @@ form.addEventListener('submit', function (event) {
     location.render();
     form.reset();
 });
-=======
-
->>>>>>> 55e484d5a1ca96bb2f400ef082e85aa0c96163a2
 
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
