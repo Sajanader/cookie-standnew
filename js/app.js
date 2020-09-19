@@ -1,6 +1,6 @@
 
 'use strict'
-var hour = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm",];
+var hour = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 var container = document.getElementById('container');
 var tableEl = document.createElement('table');
 container.appendChild(tableEl);
@@ -14,7 +14,6 @@ function Location(
     customers,
     cookies,
     total,
-
 ) {
     this.location = location;
     this.max = max;
@@ -26,24 +25,19 @@ function Location(
     locations.push(this);
 }
 Location.prototype.getCustomer = function () {
-
     for (var i = 0; i < hour.length; i++) {
         this.customers.push(getRandom(this.min, this.max));
     }
 };
-
 Location.prototype.getCookie = function () {
     for (var i = 0; i < hour.length; i++) {
         this.cookies.push(Math.ceil(this.average * this.customers[i]));
     }
 };
-
 Location.prototype.getDailyTotal = function () {
     for (var i = 0; i < hour.length; i++) {
         this.total += this.cookies[i];
-
     }
-
 };
 function header() {
     var tableEl = document.createElement('table');
@@ -52,8 +46,7 @@ function header() {
     tableEl.appendChild(headerRowEl);
     var thEl = document.createElement('th');
     headerRowEl.appendChild(thEl);
-    thEl.textContent = "                              ";
-
+    thEl.textContent = "          ";
     for (var i = 0; i < hour.length; i++) {
         var thEl = document.createElement('th');
         headerRowEl.appendChild(thEl);
@@ -63,7 +56,6 @@ function header() {
     headerRowEl.appendChild(thEl);
     thEl.textContent = " daily total ";
 }
-
 Location.prototype.render = function () {
     var tableEl = document.createElement('table');
     container.appendChild(tableEl);
@@ -105,9 +97,6 @@ function footer() {
     footerRowEl.appendChild(tfEl);
     tfEl.textContent = Total;
 }
-
-
-
 new Location(
     'Seattle',
     65,
@@ -177,7 +166,6 @@ form.addEventListener('submit', function (event) {
         max,
         min,
      average,
-    
     );
     var rowCount=tableEl.rows.length;
     tableEl.deleteRow(rowCount-1)
