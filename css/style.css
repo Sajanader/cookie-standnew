@@ -161,3 +161,27 @@ footer{
   .fa-yahoo {
     background: #430297;
     color: white;}
+
+ 
+ fieldset form{
+   border: solid;
+   padding: 14px;
+ }
+ #container {
+   box-sizing: border-box;
+ }
+ section #container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+section #container table, td, th, tfoot {
+  text-align: left;
+  padding: 20px;
+  
+}
+section #container tr:nth-child(even) {background-color: #e9dede;}
+section #container th {padding-left: 7700px;
+}
+#container th{background-color: rgb(230, 152, 178)
+}
