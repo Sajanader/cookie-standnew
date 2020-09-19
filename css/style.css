@@ -1,12 +1,12 @@
-*body{
-    box-sizing: border-box;
-}
+
 header{
-    background-image: url("/images/family.jpg");
-    height: 800px;
+    height: 10px;
     width: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px;
+    background-color: #2C3446;
+  position: fixed;
+  top: 0px;
 
 }
  header nav ul li a{
@@ -16,48 +16,51 @@ header{
     font-size: 40px;
     font-family: 'Balsamiq Sans', cursive;
     padding: 35px;
+    color: #ff4e65;
 }
 nav ul li{
     display: inline-block;
    
 }
-h2{
-    font-family: 'Balsamiq Sans', cursive;
-    padding-left: 600px;
-    text-align: center;
+main{
+  margin-left: 350px;
 }
 section p { 
-
+   width: 850px;
+   height: 200px;
     font-family: 'Balsamiq Sans', cursive;
-    width: 300px;
     text-align: center;
-    padding-left: 500px;
+    font-size: 20px;
+    padding-top: 50px;
 }
-main {
-    margin-top: -600px;
+#location{
+  text-align: center;
+  font-size: small;
+  border-radius: 40px;
+  font-family: 'Times New Roman', Times, serif;
 }
-h1{
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 30px;
+ article h1{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 70px;
+    margin-top: 200px;
+    padding: 50px;
+    margin-left: 0%;
+    font-family: 'Luckiest Guy', cursive;
+    color: #ff4e65;
 }
- article{
-    margin-top: 35px;
-    display: block; 
-    width: auto;
-    position: static;
- text-align: center;
+    #family{margin-top: 100px;
+
 }
- section{
-    width: 200px;
-    
+p strong{
+  font-size: 30px;
 }
 footer{
+  padding-top: 50px;
     clear: both;
     width: 100%;
-    height: 1000%;
-    background-color: black;
-    color: blanchedalmond;
-    
+    height: 100px;
+    background-color: #2C3446;
+    color:  #ff4e65;   
 }
 .fa {
     padding: 20px;
@@ -162,26 +165,127 @@ footer{
     background: #430297;
     color: white;}
 
- 
+    fieldset h1{
+      font-size: 30px;
+      padding-top: -1000px;
+      font-family: 'Luckiest Guy', cursive;
+      color:  #ff4e65;  
+    }
  fieldset form{
    border: solid;
-   padding: 14px;
+   padding: 30px;
+   width: 500px;
+   margin-top: 60px;
+   margin-left: 35px;
  }
- #container {
-   box-sizing: border-box;
- }
- section #container table {
-  border-collapse: collapse;
-  width: 100%;
+
+fieldset form #location{
+  margin-top: 10px;
+}
+fieldset form #average{
+  margin-top: 10px;
+}
+fieldset form #max{
+  margin-right: 10px;
+  padding-right: 10px;
+}
+fieldset form #min{
+  margin-right: 10px;
+  padding-right: 10px;
+}
+fieldset form .submit {
+  background-color: #555555;
+  color: white;
+  margin-top:10px ;
+}
+fieldset form #average{
+  padding-right: 10px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#8b6ab3;
+  background-color:#fafbfd;
+}
+.blue { color: #abd6eb; }
+.yellow { color: #FFF842; }
+
+#container th {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
 }
 
-section #container table, td, th, tfoot {
-  text-align: left;
-  padding: 20px;
-  
+#container td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
 }
-section #container tr:nth-child(even) {background-color: #e9dede;}
-section #container th {padding-left: 7700px;
+
+#container {
+	  text-align: left;
+	  overflow: hidden;
+    width: 80%;
+    height: 55%;
+	  margin: 0 35px;
+  display: table;
+  padding: 0 0 2em 0;
 }
-#container th{background-color: rgb(230, 152, 178)
+
+#container td, #container th {
+	  padding-bottom: 3%;
+	  padding-top: 3%;
+  padding-left:2%;  
+}
+#container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+
+#container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+#container th {
+    background-color:  #2C3446;
+    color: white;
+    padding: 0.3rem;
+}
+#container th:first-child {padding: 2rem; }
+#container td:first-child { padding: 0.5rem; 
+  color: #FB667A;
+ }
+
+#container tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+#container td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  font-weight: bold;
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+#container td:nth-child(4),
+#container th:nth-child(4) { display: none; }
+}
+
+#cookies{
+  background-image: url(https://image.freepik.com/free-photo/cookies-plate-with-white-background_23-2148240625.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
