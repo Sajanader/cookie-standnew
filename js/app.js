@@ -40,8 +40,6 @@ Location.prototype.getDailyTotal = function () {
     }
 };
 function header() {
-    var tableEl = document.createElement('table');
-    container.appendChild(tableEl);
     var headerRowEl = document.createElement('tr');
     tableEl.appendChild(headerRowEl);
     var thEl = document.createElement('th');
@@ -57,8 +55,6 @@ function header() {
     thEl.textContent = " daily total ";
 }
 Location.prototype.render = function () {
-    var tableEl = document.createElement('table');
-    container.appendChild(tableEl);
     var dataRowEl = document.createElement('tr');
     tableEl.appendChild(dataRowEl);
     var tdEl = document.createElement('td');
@@ -75,9 +71,7 @@ Location.prototype.render = function () {
 }
 
 function footer() {
-    var tableEl = document.createElement('table');
-    container.appendChild(tableEl);
-    var footerRowEl = document.createElement('tr');
+     var footerRowEl = document.createElement('tr');
     tableEl.appendChild(footerRowEl);
     var tfEl = document.createElement('td');
     footerRowEl.appendChild(tfEl);

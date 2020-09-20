@@ -174,7 +174,7 @@ footer{
  fieldset form{
    border: solid;
    padding: 30px;
-   width: 500px;
+   width: 44%;
    margin-top: 60px;
    margin-left: 35px;
  }
@@ -229,8 +229,8 @@ body {
 #container {
 	  text-align: left;
 	  overflow: hidden;
-    width: 80%;
-    height: 55%;
+    width: 30%;
+    height: 40%;
 	  margin: 0 35px;
   display: table;
   padding: 0 0 2em 0;
