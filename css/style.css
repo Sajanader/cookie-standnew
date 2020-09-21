@@ -1,4 +1,15 @@
-
+#home{ 
+  width: 30px;
+  height: 40px;
+  background-color: #ff4e65;
+  padding: 20px;
+  text-align: center;
+  margin-left: 15px;
+}
+#link{
+  text-decoration: none;
+  
+}
 header{
     height: 10px;
     width: 100%;
